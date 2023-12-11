@@ -21,29 +21,6 @@ const vstup ={
     CSS: prompt("Zadejte úroveň znalostí CSS v rozmezí 0-100:"),
     JS: prompt("Zadejte úroveň znalostí Javascriptu v rozmezí 0-100:"),
 } 
-/*
-console.log(vstup)
-
-const skill1Elm = document.querySelector("#skill1")
-const skill1ValueElm = skill1Elm.querySelector(".skill__value")
-const skill1ProgrElm = skill1Elm.querySelector(".skill__bar > .skill__progress")
-
-skill1ValueElm.textContent = `${vstup.HTML} /100`
-skill1ProgrElm.style.width = `${vstup.HTML}%`
-
-const skill2Elm = document.querySelector("#skill2")
-const skill2ValueElm = skill2Elm.querySelector(".skill__value")
-const skill2ProgrElm = skill2Elm.querySelector(".skill__bar > .skill__progress")
-
-skill2ValueElm.textContent = `${vstup.CSS} /100`
-skill2ProgrElm.style.width = `${vstup.CSS}%`
-
-const skill3Elm = document.querySelector("#skill3")
-const skill3ValueElm = skill3Elm.querySelector(".skill__value")
-const skill3ProgrElm = skill3Elm.querySelector(".skill__bar > .skill__progress")
-
-skill3ValueElm.textContent = `${vstup.JS} /100`
-skill3ProgrElm.style.width = `${vstup.JS}%` */
 
 /* Na samém začátku vašeho programu vytvořte funkci updateSkill, která bere dva vstupy: 
 textový řetězec představující id elementu a číslo mezi 0–100. 
