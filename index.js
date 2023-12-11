@@ -16,12 +16,12 @@ na správnou hodnotu. Použijte tuto funkci ve vašem kódu, abyste nemuseli
 při nastavování posuvníků psát třikrát po sobě téměř stejný kód. */
 
 console.log('funguju!');
-/* const vstup ={
+const vstup ={
     HTML: prompt("Zadejte úroveň znalostí HTML v rozmezí 0-100:"),
     CSS: prompt("Zadejte úroveň znalostí CSS v rozmezí 0-100:"),
     JS: prompt("Zadejte úroveň znalostí Javascriptu v rozmezí 0-100:"),
 } 
-
+/*
 console.log(vstup)
 
 const skill1Elm = document.querySelector("#skill1")
@@ -54,9 +54,11 @@ Použijte tuto funkci ve vašem kódu, abyste nemuseli při nastavování posuvn
 const updateSkill = (idElm,cislo) => {
     const skillProgrElm = document.querySelector(`#${idElm}`)
     const skillIdElm = skillProgrElm.querySelector(".skill__bar > .skill__progress")
-    return skillIdElm.style.width = `${cislo}%`
+    const skillElm = skillProgrElm.querySelector(".skill__value")
+    skillElm.textContent = `${cislo} /100`
+    skillIdElm.style.width = `${cislo}%`
 }
 
-updateSkill("skill1", "56")
-updateSkill("skill2", "90")
-updateSkill("skill3", "10")
+updateSkill("skill1", vstup.HTML)
+updateSkill("skill2", vstup.CSS)
+updateSkill("skill3", vstup.JS)
